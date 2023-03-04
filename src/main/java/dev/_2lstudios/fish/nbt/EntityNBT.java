@@ -1,4 +1,4 @@
-package dev._2lstudios.fish.api.nbt;
+package dev._2lstudios.fish.nbt;
 
 import java.util.UUID;
 
@@ -7,7 +7,7 @@ import org.bukkit.entity.EntityType;
 
 import com.google.gson.annotations.Expose;
 
-import dev._2lstudios.fish.api.Serializable;
+import dev._2lstudios.fish.chat.Serializable;
 
 public class EntityNBT extends Serializable implements NBT {
     @Expose

@@ -1,11 +1,11 @@
-package dev._2lstudios.fish.api.nbt;
+package dev._2lstudios.fish.nbt;
 
 import org.bukkit.Material;
 import org.bukkit.inventory.ItemStack;
 
 import com.google.gson.annotations.Expose;
 
-import dev._2lstudios.fish.api.Serializable;
+import dev._2lstudios.fish.chat.Serializable;
 
 public class ItemNBT extends Serializable implements NBT {
     @Expose

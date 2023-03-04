@@ -2,8 +2,8 @@ package dev._2lstudios.fish.tests;
 
 import org.junit.Test;
 
-import dev._2lstudios.fish.api.Component;
-import dev._2lstudios.fish.api.TextComponent;
+import dev._2lstudios.fish.chat.Component;
+import dev._2lstudios.fish.chat.TextComponent;
 
 import static org.junit.Assert.assertEquals;
 

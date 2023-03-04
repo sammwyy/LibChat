@@ -1,4 +1,4 @@
-package dev._2lstudios.fish.api;
+package dev._2lstudios.fish.chat;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -6,8 +6,8 @@ import java.util.List;
 import com.google.gson.annotations.Expose;
 
 import dev._2lstudios.fish.FishAPI;
-import dev._2lstudios.fish.api.events.ClickEvent;
-import dev._2lstudios.fish.api.events.HoverEvent;
+import dev._2lstudios.fish.events.ClickEvent;
+import dev._2lstudios.fish.events.HoverEvent;
 
 public class Component extends Serializable {
     @Expose

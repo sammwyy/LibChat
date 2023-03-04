@@ -1,4 +1,4 @@
-package dev._2lstudios.fish.api.nbt;
+package dev._2lstudios.fish.nbt;
 
 import com.google.gson.JsonElement;
 import com.google.gson.annotations.Expose;

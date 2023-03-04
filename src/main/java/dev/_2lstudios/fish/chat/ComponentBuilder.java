@@ -1,4 +1,4 @@
-package dev._2lstudios.fish.api;
+package dev._2lstudios.fish.chat;
 
 public class ComponentBuilder {
     public final static char ALT_COLOR_CHAR = '&';

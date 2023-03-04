@@ -1,11 +1,11 @@
-package dev._2lstudios.fish.api.events;
+package dev._2lstudios.fish.events;
 
 import org.bukkit.entity.Entity;
 
 import com.google.gson.annotations.Expose;
 
-import dev._2lstudios.fish.api.Serializable;
-import dev._2lstudios.fish.api.nbt.EntityNBT;
+import dev._2lstudios.fish.chat.Serializable;
+import dev._2lstudios.fish.nbt.EntityNBT;
 
 public class HoverEvent extends Serializable {
     @Expose

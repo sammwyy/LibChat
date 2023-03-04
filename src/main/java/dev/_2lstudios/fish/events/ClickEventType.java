@@ -1,4 +1,4 @@
-package dev._2lstudios.fish.api.events;
+package dev._2lstudios.fish.events;
 
 public enum ClickEventType {
     /**

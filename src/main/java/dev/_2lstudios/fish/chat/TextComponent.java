@@ -1,4 +1,4 @@
-package dev._2lstudios.fish.api;
+package dev._2lstudios.fish.chat;
 
 import com.google.gson.annotations.Expose;
 

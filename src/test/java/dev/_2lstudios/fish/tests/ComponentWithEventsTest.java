@@ -2,12 +2,12 @@ package dev._2lstudios.fish.tests;
 
 import org.junit.Test;
 
-import dev._2lstudios.fish.api.Component;
-import dev._2lstudios.fish.api.TextComponent;
-import dev._2lstudios.fish.api.events.ClickEvent;
-import dev._2lstudios.fish.api.events.ClickEventType;
-import dev._2lstudios.fish.api.events.HoverEvent;
-import dev._2lstudios.fish.api.events.HoverEventType;
+import dev._2lstudios.fish.chat.Component;
+import dev._2lstudios.fish.chat.TextComponent;
+import dev._2lstudios.fish.events.ClickEvent;
+import dev._2lstudios.fish.events.ClickEventType;
+import dev._2lstudios.fish.events.HoverEvent;
+import dev._2lstudios.fish.events.HoverEventType;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;

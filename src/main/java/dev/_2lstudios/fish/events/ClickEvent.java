@@ -1,8 +1,8 @@
-package dev._2lstudios.fish.api.events;
+package dev._2lstudios.fish.events;
 
 import com.google.gson.annotations.Expose;
 
-import dev._2lstudios.fish.api.Serializable;
+import dev._2lstudios.fish.chat.Serializable;
 
 public class ClickEvent extends Serializable {
     @Expose

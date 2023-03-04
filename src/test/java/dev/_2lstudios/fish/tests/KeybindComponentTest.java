@@ -2,7 +2,7 @@ package dev._2lstudios.fish.tests;
 
 import org.junit.Test;
 
-import dev._2lstudios.fish.api.KeybindComponent;
+import dev._2lstudios.fish.chat.KeybindComponent;
 
 import static org.junit.Assert.assertEquals;
 
