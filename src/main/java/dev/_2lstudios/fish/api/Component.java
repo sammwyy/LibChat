@@ -62,6 +62,10 @@ public class Component extends Serializable {
         return this.extra;
     }
 
+    public int getChildrenCount() {
+        return this.extra == null ? 0 : this.extra.size();
+    }
+
     public String getInsertion() {
         return this.insertion;
     }
@@ -99,6 +103,11 @@ public class Component extends Serializable {
         return this;
     }
 
+    public Component color(String color) {
+        this.color = color;
+        return this;
+    }
+
     public Component italic() {
         this.italic = !this.italic;
         return this;
@@ -132,6 +141,15 @@ public class Component extends Serializable {
     public Component setInsertion(String insertion) {
         this.insertion = insertion;
         return this;
+    }
+
+    public boolean hasStyle() {
+        return this.color != null
+                || this.bold
+                || this.italic
+                || this.obfuscated
+                || this.strikethrough
+                || this.underlined;
     }
 
     public static Component fromJSON(String json) {
