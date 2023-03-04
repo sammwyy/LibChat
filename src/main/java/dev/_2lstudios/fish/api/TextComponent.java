@@ -4,7 +4,7 @@ import com.google.gson.annotations.Expose;
 
 import dev._2lstudios.fish.FishAPI;
 
-public class TextComponent extends StylishedComponent {
+public class TextComponent extends Component {
     @Expose
     private String text;
 

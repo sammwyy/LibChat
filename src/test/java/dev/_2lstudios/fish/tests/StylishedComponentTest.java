@@ -3,7 +3,6 @@ package dev._2lstudios.fish.tests;
 import org.junit.Test;
 
 import dev._2lstudios.fish.api.Component;
-import dev._2lstudios.fish.api.StylishedComponent;
 import dev._2lstudios.fish.api.TextComponent;
 
 import static org.junit.Assert.assertEquals;
@@ -15,7 +14,7 @@ public class StylishedComponentTest {
 
     @Test
     public void derializeTextComponent() {
-        StylishedComponent component = TextComponent.fromJSON(RAW_JSON);
+        Component component = TextComponent.fromJSON(RAW_JSON);
         assertTrue(component.isBold());
         assertTrue(component.isItalic());
         assertTrue(component.isStrikeThrough());
@@ -25,7 +24,7 @@ public class StylishedComponentTest {
 
     @Test
     public void serializeTextComponent() {
-        Component component = new StylishedComponent().bold().italic().obfuscate().strikethrough();
+        Component component = new Component().bold().italic().obfuscate().strikethrough();
         assertEquals(component.toJSON(), RAW_JSON);
     }
 }
