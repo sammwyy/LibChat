@@ -4,19 +4,19 @@
     <modelVersion>4.0.0</modelVersion>
 
     <!-- Project information -->
-    <groupId>dev._2lstudios</groupId>
-    <artifactId>fish-api</artifactId>
+    <groupId>com.sammwy</groupId>
+    <artifactId>libchat</artifactId>
     <packaging>jar</packaging>
 
     <!-- Plugin Information -->
-    <name>FishAPI</name>
+    <name>LibChat</name>
     <description>Chat component library for Bukkit</description>
     <version>0.0.1</version>
-    <url>https://github.com/2lstudios-mc/fish-api</url>
+    <url>https://github.com/sammwyy/libchat</url>
 
     <properties>
-        <author>2LStudios</author>
-        <mainClass>dev._2lstudios.fish.FishAPIPlugin</mainClass>
+        <author>Sammwy</author>
+        <mainClass>com.sammwy.libchat.plugin.LCBukkitPlugin</mainClass>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
@@ -33,7 +33,7 @@
         <dependency>
             <groupId>org.spigotmc</groupId>
             <artifactId>spigot-api</artifactId>
-            <version>1.18.1-R0.1-SNAPSHOT</version>
+            <version>1.19.2-R0.1-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
