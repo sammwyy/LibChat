@@ -60,16 +60,25 @@ public enum ChatColor {
         }
     }
 
-    public static String translateAlternateColorCodes(char altColorChar, String textToTranslate) {
+    public static final String COLORS = "0123456789AaBbCcDdEeFfXx";
+    public static final String SPECIALS = "KkLlMmNnOoRr";
+    public static final String ALL = COLORS + SPECIALS;
+
+    public static String translateAlternateColorCodes(char altColorChar, String textToTranslate,
+            boolean allowSpecials) {
         Preconditions.checkArgument(textToTranslate != null, "Cannot translate null text");
 
         char[] b = textToTranslate.toCharArray();
         for (int i = 0; i < b.length - 1; i++) {
-            if (b[i] == altColorChar && "0123456789AaBbCcDdEeFfKkLlMmNnOoRrXx".indexOf(b[i + 1]) > -1) {
+            if (b[i] == altColorChar && (allowSpecials ? ALL : COLORS).indexOf(b[i + 1]) > -1) {
                 b[i] = ChatColor.COLOR_CHAR;
                 b[i + 1] = Character.toLowerCase(b[i + 1]);
             }
         }
         return new String(b);
+    }
+
+    public static String translateAlternateColorCodes(char altColorChar, String textToTranslate) {
+        return translateAlternateColorCodes(altColorChar, textToTranslate, true);
     }
 }
